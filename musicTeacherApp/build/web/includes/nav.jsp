@@ -7,6 +7,8 @@
             <li class="active"><a href="index.jsp">Home</a></li>
             <li><a href="read.jsp">Read.jsp</a></li>
             <li><a href="contact.jsp">Contact.jsp</a></li>
+            <li><a href="login.jsp">Login.jsp</a></li>
+            
         </ul>
     </div>
 </nav>
