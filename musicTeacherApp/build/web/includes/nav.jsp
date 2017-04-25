@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0%; right: 0;">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -8,7 +9,7 @@
             <li><a href="schedule.jsp">Schedule.jsp</a></li>
             <li><a href="contact.jsp">Contact.jsp</a></li>
             <li><a href="login.jsp">Login.jsp</a></li>
-            
         </ul>
     </div>
 </nav>
+</div>
