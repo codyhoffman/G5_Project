@@ -5,7 +5,7 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="index.jsp">Home</a></li>
-            <li><a href="read.jsp">Read.jsp</a></li>
+            <li><a href="schedule.jsp">Schedule.jsp</a></li>
             <li><a href="contact.jsp">Contact.jsp</a></li>
             <li><a href="login.jsp">Login.jsp</a></li>
             
