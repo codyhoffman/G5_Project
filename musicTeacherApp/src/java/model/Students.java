@@ -12,7 +12,7 @@ public class Students {
     private String emailAddr;
     private String typeOfLesson;
     private String gender;
-    private int timeSlot;
+    private String timeSlot;
     private int courseLevel;
 
     public Students() {
@@ -26,12 +26,12 @@ public class Students {
         this.emailAddr = "";
         this.typeOfLesson = "";
         this.gender = "";
-        this.timeSlot = 0;
+        this.timeSlot = "";
         this.courseLevel = 0;
 
     }
     
-     public Students(int studentID, String studentName, String address, int zip, String city, String studentState, int phoneNumber, String emailAddr, String typeOfLesson, String gender, int timeSlot, int courseLevel) {
+     public Students(int studentID, String studentName, String address, int zip, String city, String studentState, int phoneNumber, String emailAddr, String typeOfLesson, String gender, String timeSlot, int courseLevel) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.address = address;
@@ -126,16 +126,16 @@ public class Students {
         this.gender = gender;
     }
     
-     public int getTimeSlot() {
+     public String getTimeSlot() {
         return timeSlot;
     }
 
-    public void setTimeSlot(int timeSlot) {
+    public void setTimeSlot(String timeSlot) {
         this.timeSlot = timeSlot;
     }
     
      public int getCourseLevel() {
-        return timeSlot;
+        return courseLevel;
     }
 
     public void setCourseLevel(int courseLevel) {
