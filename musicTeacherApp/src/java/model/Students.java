@@ -144,7 +144,7 @@ public class Students {
     
     @Override
     public String toString() {
-        return "Friends{" + "studentID=" + studentID + ", studentName=" + studentName + ", address=" + address + ", zip=" + zip + ", city=" + city + ", studentState=" + studentState + ", phoneNumber=" + phoneNumber +", emailAddr=" + emailAddr + ", gender=" + gender + ", timeSlot=" + timeSlot + ", courseLevel=" + courseLevel + '}';
+        return "Stuudents{" + "studentID=" + studentID + ", studentName=" + studentName + ", address=" + address + ", zip=" + zip + ", city=" + city + ", studentState=" + studentState + ", phoneNumber=" + phoneNumber +", emailAddr=" + emailAddr + ", gender=" + gender + ", timeSlot=" + timeSlot + ", courseLevel=" + courseLevel + '}';
     }
        
     

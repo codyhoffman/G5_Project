@@ -211,6 +211,7 @@ public class ReadQuery {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         table +="</table>";
+        
             return table;
         
     }
