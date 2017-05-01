@@ -68,8 +68,8 @@ public class ReadQuery {
     public String getHTMLtable(){
         
             String table="";
-            table += "<table>";
-            
+            table += "<table class='table table-striped table-bordered table-hover'>";
+            table += "<thead>";
             table +="<tr>";
                
                 table+="<th>";
@@ -123,7 +123,8 @@ public class ReadQuery {
              
                     
                table +="</tr>";
-            
+               table += "</thead>";
+               table += "<tbody>";
          try {   
             while(this.results.next()){
                 
@@ -210,6 +211,7 @@ public class ReadQuery {
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
+        table += "</tbody>";
         table +="</table>";
         return table;
         
