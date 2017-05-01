@@ -89,15 +89,15 @@ public class ReadRecord {
             
             
                 student.setStudentID(this.results.getInt("studentID"));
-                student.setStudentName(this.results.getString("stuentName"));
+                student.setStudentName(this.results.getString("studentName"));
                 student.setAddress(this.results.getString("address"));
                 student.setCity(this.results.getString("city"));
-                student.setState(this.results.getString("state"));
+                student.setState(this.results.getString("studentState"));
                 student.setZip(this.results.getInt("zipcode"));
                 student.setPhoneNo(this.results.getString("phoneNo"));
-                student.setEmailAddr(this.results.getString("Email"));
+                student.setEmailAddr(this.results.getString("studentEmail"));
                 student.setTimeSlot(this.results.getString("timeSlot"));
-                student.setTypeOfLesson(this.results.getString("lesson"));
+                student.setTypeOfLesson(this.results.getString("lessonType"));
                 student.setCourseLevel(this.results.getInt("courseLevel"));
                 student.setGender(this.results.getString("gender"));
         } catch (SQLException ex) {
