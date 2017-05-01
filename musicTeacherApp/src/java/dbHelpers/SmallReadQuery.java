@@ -14,24 +14,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Students;
 
-public class ReadQuery {
+public class SmallReadQuery {
     
     private Connection conn;
     private ResultSet results;
     
-    public ReadQuery () {
+    public SmallReadQuery () {
         
        Properties propa= new Properties();
        InputStream instr=getClass().getResourceAsStream("dbConn.properties");
         try {
             propa.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
        
        String driver= propa.getProperty("driver.name");
@@ -41,12 +41,12 @@ public class ReadQuery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn = DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }
@@ -59,7 +59,7 @@ public class ReadQuery {
             PreparedStatement ps = conn.prepareStatement(query);
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         
@@ -73,55 +73,13 @@ public class ReadQuery {
             table +="<tr>";
                
                 table+="<th>";
-                    table+="ID";
-                table+="</th>";
-                
-                table+="<th>";
                     table+="Name";
                 table+="</th>";
                 
                 table+="<th>";
-                    table+="Address";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="City";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="State";
-                table+="</th>";
-                
-                table+="<th>";
-                table+="Zipcode";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="Phone Number";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="Email";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="Time";
-                table+="</th>";
-                
-                table+="<th>";
-                table+="Lesson Type";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="Level";
-                table+="</th>";
-                
-                table+="<th>";
-                    table+="Gender";
-                table+="</th>";
-                
-             
-                    
+                    table+="Instrument";
+                table+="</th>";           
+                  
                table +="</tr>";
                table += "</thead>";
                table += "<tbody>";
@@ -148,62 +106,25 @@ public class ReadQuery {
                
                 table += "<tr>";
                 
-                       
-                    table += "<td>";
-                        table += student.getStudentID();  
-                    table +="</td>";
                     
                     table += "<td>";
                         table += student.getStudentName();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getAddress();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getCity();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getState();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getZip();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getPhoneNo();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getEmailAddr();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getTimeSlot();  
-                    table +="</td>";
+                    table +="</td>"; 
                     
                     table += "<td>";
                         table += student.getTypeOfLesson();  
                     table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getCourseLevel();  
-                    table +="</td>";
-                    
-                    table += "<td>";
-                        table += student.getGender();  
-                    table +="</td>";
                               
-                
+                    table += "<td>";
+                        table += "<a href=more?studentID=" + student.getStudentID() + "> More </a>";
+                    table += "</td>";
+                    
                 table +="</tr>";
             }
             
             
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SmallReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         table += "</tbody>";
         table +="</table>";
