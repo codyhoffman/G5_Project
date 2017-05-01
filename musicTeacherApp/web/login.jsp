@@ -18,6 +18,7 @@
         <ul>
             <li><a href="smallRead">List Students</a></li>
             <li><a href="add">Add a Student</a></li>
+            <li><a href="search.jsp">Search Students</a></li>
         </ul>
     </div>
     

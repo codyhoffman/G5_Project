@@ -54,12 +54,10 @@ public class SearchQuery {
     public void doSearch(String input) {
         
         try {
-            String query = "SELECT * FROM students "
-                    + "WHERE UPPER(studentName) LIKE ? "
-                    + "OR UPPER(phoneNo) LIKE ? "
-                    + "ORDER BY studentID ASC";
+            String query = "SELECT * FROM Students WHERE (UPPER(studentName) LIKE ? OR UPPER(phoneNo) LIKE ? ) ORDER BY studentID ASC";
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setString(1, "%" + input.toUpperCase() + "%");
+            ps.setString(2, "%" + input + "%");
             this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
@@ -209,7 +207,10 @@ public class SearchQuery {
                     table += "<td>";
                         table += student.getGender();  
                     table +="</td>";
-                              
+                    
+                    table += "<td>";
+                        table += "<a href=update?studentID=" + student.getStudentID() + "> Update </a>" + "<a href=delete?studentID=" + student.getStudentID() + "> Delete </font></a>";
+                    table += "</td>";
                 
                 table +="</tr>";
             }

@@ -77,6 +77,8 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        // get text
         String input = request.getParameter("searchVal");
         // create search query helper
         SearchQuery sq = new SearchQuery();

@@ -20,7 +20,7 @@
         <div class="col-sm-12 col-sm-offset-4">
             
             
-            <h1>Search Students</h1>
+            <h1>Search Students (name or phone #)</h1>
             <form name="searchForm" action="search" method="post">
             <table >
                 <tbody>
