@@ -8,7 +8,7 @@ public class Students {
     private int zip;
     private String city;
     private String studentState;
-    private int phoneNumber;
+    private String phoneNo;
     private String emailAddr;
     private String typeOfLesson;
     private String gender;
@@ -22,7 +22,7 @@ public class Students {
         this.zip = 0;
         this.city = "";
         this.studentState = "";
-        this.phoneNumber = 0;
+        this.phoneNo = "";
         this.emailAddr = "";
         this.typeOfLesson = "";
         this.gender = "";
@@ -31,14 +31,14 @@ public class Students {
 
     }
     
-     public Students(int studentID, String studentName, String address, int zip, String city, String studentState, int phoneNumber, String emailAddr, String typeOfLesson, String gender, String timeSlot, int courseLevel) {
+     public Students(int studentID, String studentName, String address, int zip, String city, String studentState, String phoneNo, String emailAddr, String typeOfLesson, String gender, String timeSlot, int courseLevel) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.address = address;
         this.zip = zip;
         this.city = city;
         this.studentState = studentState;
-        this.phoneNumber = phoneNumber;
+        this.phoneNo = phoneNo;
         this.emailAddr = emailAddr;
         this.typeOfLesson = typeOfLesson;
         this.gender = gender;
@@ -94,12 +94,12 @@ public class Students {
         this.studentState = studentState;
     }
     
-     public int getPhoneNumber() {
-        return phoneNumber;
+     public String getPhoneNo() {
+        return phoneNo;
     }
-
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    
+    public void setPhoneNo(String phoneNo) {
+        this.phoneNo = phoneNo;
     }
 
     public String getEmailAddr() {
@@ -144,7 +144,7 @@ public class Students {
     
     @Override
     public String toString() {
-        return "Friends{" + "studentID=" + studentID + ", studentName=" + studentName + ", address=" + address + ", zip=" + zip + ", city=" + city + ", studentState=" + studentState + ", phoneNumber=" + phoneNumber +", emailAddr=" + emailAddr + ", gender=" + gender + ", timeSlot=" + timeSlot + ", courseLevel=" + courseLevel + '}';
+        return "Students{" + "studentID=" + studentID + ", studentName=" + studentName + ", address=" + address + ", zip=" + zip + ", city=" + city + ", studentState=" + studentState + ", phoneNo=" + phoneNo +", emailAddr=" + emailAddr + ", gender=" + gender + ", timeSlot=" + timeSlot + ", courseLevel=" + courseLevel + '}';
     }
        
     

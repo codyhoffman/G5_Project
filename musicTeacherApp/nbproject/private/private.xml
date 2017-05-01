@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/web/includes/nav.jsp</file>
-            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/web/includes/header.jsp</file>
-            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/src/java/controllers/ReadServlet.java</file>
-            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/web/index.jsp</file>
+            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/src/java/dbHelpers/dbConn.properties</file>
+            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/web/read.jsp</file>
+            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/src/java/controllers/Read.java</file>
+            <file>file:/Users/codyhoffman/g5project/G5_Project/musicTeacherApp/src/java/dbHelpers/ReadQuery.java</file>
         </group>
     </open-files>
 </project-private>

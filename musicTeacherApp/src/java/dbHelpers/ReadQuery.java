@@ -54,10 +54,10 @@ public class ReadQuery {
     public void doRead(){
         
         try {
-            String query= "Select * FROM students ORDER BY studentID ASC";
+            String query= "SELECT * FROM Students";
             
-            PreparedStatement ps= conn.prepareStatement(query);
-            this.results=ps.executeQuery();
+            PreparedStatement ps = conn.prepareStatement(query);
+            this.results = ps.executeQuery();
         } catch (SQLException ex) {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -68,9 +68,9 @@ public class ReadQuery {
     public String getHTMLtable(){
         
             String table="";
-            table += "<table class=read>";
+            table += "<table>";
             
-            table +="<tr id=topRow>";
+            table +="<tr>";
                
                 table+="<th>";
                     table+="ID";
@@ -127,17 +127,17 @@ public class ReadQuery {
          try {   
             while(this.results.next()){
                 
-                Students student=new Students();
+                Students student = new Students();
                 student.setStudentID(this.results.getInt("studentID"));
-                student.setStudentName(this.results.getString("stuentName"));
+                student.setStudentName(this.results.getString("studentName"));
                 student.setAddress(this.results.getString("address"));
                 student.setCity(this.results.getString("city"));
-                student.setState(this.results.getString("state"));
+                student.setState(this.results.getString("studentState"));
                 student.setZip(this.results.getInt("zipcode"));
-                student.setPhoneNumber(this.results.getInt("phoneNo"));
-                student.setEmailAddr(this.results.getString("Email"));
+                student.setPhoneNo(this.results.getString("phoneNo"));
+                student.setEmailAddr(this.results.getString("studentEmail"));
                 student.setTimeSlot(this.results.getString("timeSlot"));
-                student.setTypeOfLesson(this.results.getString("lesson"));
+                student.setTypeOfLesson(this.results.getString("lessonType"));
                 student.setCourseLevel(this.results.getInt("courseLevel"));
                 student.setGender(this.results.getString("gender"));
                 
@@ -173,7 +173,7 @@ public class ReadQuery {
                     table +="</td>";
                     
                     table += "<td>";
-                        table += student.getPhoneNumber();  
+                        table += student.getPhoneNo();  
                     table +="</td>";
                     
                     table += "<td>";
@@ -211,8 +211,7 @@ public class ReadQuery {
             Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         table +="</table>";
-            return table;
+        return table;
         
     }
-    
 }
