@@ -18,9 +18,10 @@
     </head>
     <body>
         <%@ include file="includes/nav.jsp" %>
-    <%@ include file="includes/header.jsp" %>
+        <%@ include file="includes/header.jsp" %>
     
-        <div class="container">
+        <div class="container-fluid">
+        <div class="col-sm-12 col-sm-offset-4">
             
         <h1>Update Student</h1>
         
@@ -67,22 +68,42 @@
                         <td>Email:</td>
                         <td><input type="text" name="studentEmail" value="<%= student.getEmailAddr() %>" size="50"></td>
                     </tr>
-                    
+                   
                     <tr>
                         <td>Gender:</td>
-                        <td><input type="text" name="gender" value="<%= student.getGender() %>" size="50"></td>
+                        <td>
+                      
+                                <label class="radio-inline"><input type="radio" name="gender" value="Male">Male</label>
+                                <label class="radio-inline"><input type="radio" name="gender" value="Female">Female</label>
+                  
+                        </td>
                     </tr>
-                    
+                   
                     <tr>
                         <td>Type:</td>
-                        <td><input type="text" name="lessonType" value="<%= student.getTypeOfLesson() %>" size="50"></td>
+                        <td>
+                            <label class="checkbox-inline"><input type="checkbox" name="lessonType" value="Voice">Voice</label>
+                            <label class="checkbox-inline"><input type="checkbox" name="lessonType" value="Piano">Piano</label>
+                        </td>
                     </tr>
                     
                     <tr>
                         <td>Level:</td>
-                        <td><input type="text" name="courseLevel" value="<%= student.getCourseLevel() %>" size="50"></td>
+                        <td>                                                    
+                            
+                            <div class="form-group">
+                            <label for="courseLevel"></label>
+                            <select class="form-control" id="courseLevel" name="courseLevel">
+                              <option value="<%= student.getCourseLevel() %>"> </option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                            </select>
+                            </div>
+                            
+                        </td>
                     </tr>
-                    
                     <tr>
                         <td>Time:</td>
                         <td><input type="text" name="timeSlot" value="<%= student.getTimeSlot() %>" size="50"></td>
@@ -95,11 +116,11 @@
             <br><br>
             
             <input type="reset" value="Clear" name="reset">
-                    <input type="submit" value="Update" name="submit">
+            <input type="submit" value="Update" name="submit">
             
             
         </form>
-        
+        </div>
         </div><!--container-->
         
         
