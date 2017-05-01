@@ -196,13 +196,7 @@ public class ReadQuery {
                     table += "<td>";
                         table += student.getGender();  
                     table +="</td>";
-                    
-                    
-                    table+="<td>";
-                        table +="<a href=update?studentID="+ student.getStudentID()+"> Update</a>" 
-                                + "<a href=delete?studentID=" + student.getStudentID() + "> Delete </a>";
-                        
-                    table +="</td>";           
+                              
                 
                 table +="</tr>";
             }
