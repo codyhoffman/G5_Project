@@ -16,7 +16,7 @@
     
     <div class="container-fluid">
         <ul>
-            <li><a href="read">List All Students</a></li>
+            <li><a href="smallRead">List Students</a></li>
             <li><a href="add">Add a Student</a></li>
         </ul>
     </div>
