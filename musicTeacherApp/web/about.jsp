@@ -27,9 +27,15 @@
                 <h4>Experience:</h4>
                 <p>Conducted symphony orchestra in Vienna</p><br>
                 <h4>Biography:</h4>
-                <p>I grew up in blah blah</p><br>
+                <p>Lorem ipsum dolor sit amet, ne ullum elitr graecis est, quo ferri choro possit et, offendit delectus disputationi ne nam. Cu cum oratio labores conceptam. Ad cum propriae delicatissimi, vel tincidunt rationibus ut. Maiorum mnesarchum eam ut, dolor putent scribentur sed an. Vim ei euismod percipit salutandi, ut doming comprehensam vel, nisl simul mel ad.
+
+Pro an essent causae dissentiunt. Vim vidisse malorum evertitur ex, ullum fuisset cu his. Alia timeam cum ne. No falli simul sit, ex splendide accommodare ullamcorper eam, ullum partem in eum. In eius justo albucius vix, duis oblique inimicus ex mel.
+</p><br>
                 <h4>References:</h4>
-                <p>John Smith (Previous Student): "He was really great, I learned a lot"</p><br>
+                <p>Lorem ipsum dolor sit amet, ne ullum elitr graecis est, quo ferri choro possit et, offendit delectus disputationi ne nam. Cu cum oratio labores conceptam. Ad cum propriae delicatissimi, vel tincidunt rationibus ut. Maiorum mnesarchum eam ut, dolor putent scribentur sed an. Vim ei euismod percipit salutandi, ut doming comprehensam vel, nisl simul mel ad.
+
+Pro an essent causae dissentiunt. Vim vidisse malorum evertitur ex, ullum fuisset cu his. Alia timeam cum ne. No falli simul sit, ex splendide accommodare ullamcorper eam, ullum partem in eum. In eius justo albucius vix, duis oblique inimicus ex mel.
+</p><br>
                 <img src="FullSizeRender.jpg.jpeg" alt="Team Photo" width="350" height="250">
             </div>
        </div>
