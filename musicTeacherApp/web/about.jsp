@@ -30,7 +30,7 @@
                 <p>I grew up in blah blah</p><br>
                 <h4>References:</h4>
                 <p>John Smith (Previous Student): "He was really great, I learned a lot"</p><br>
-                <img src="includes/logo.JPG" alt="logo" width="350" height="250">
+                <img src="FullSizeRender.jpg.jpeg" alt="Team Photo" width="350" height="250">
             </div>
        </div>
     </div>
